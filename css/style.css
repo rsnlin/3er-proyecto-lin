@@ -1,0 +1,432 @@
+body {
+font-family: "Barlow Condensed", sans-serif;
+margin: 0;
+font-size: 18px;
+color: black;
+background-color: white;
+background-image: url(../images/fondo.png);
+}
+
+
+/*Títulos y subtítulos*/
+h1{
+    margin: 18px;  
+    text-align: center;
+    padding: 30px;
+    font-weight: bold;
+    
+}
+
+h2{
+text-align: center;
+margin-top: 60px;
+margin-bottom: 40px;
+font-size: 30px;
+font-weight: bold;
+
+
+}
+/*Estilos del header*/
+header {
+display: flex; 
+min-height: 80px;
+background-color: black;
+justify-content: space-between;
+align-items: center;
+padding: 10px;
+}
+
+.logo {
+    display: flex; 
+    align-items: center;  
+  
+    }
+
+header h2 {
+font-size: 20px;    
+margin: 1px; 
+ }
+
+header nav ul{
+    list-style-type: none;
+    display: flex;   
+
+}
+
+header nav ul li{
+    font-weight: 800;
+    padding-right: 15px;
+
+}
+
+
+header img {
+    height: 62px;
+    margin: 15px;
+}    
+
+a{
+text-decoration: none;
+color: white;
+}
+
+.current{
+border-bottom: 2.5px solid white;
+padding: 5px 0;
+}
+
+header nav a:hover{
+color: gray;    
+}
+
+.hamburger{
+display: none;
+}
+
+
+/*Estilos del main de index*/
+
+.contenido1{
+    display: grid;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(../images/Portada.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.contenido1 h1{
+    color: rgb(134, 66, 66);
+    text-align: center;
+    position: relative;
+    bottom: 35%;
+
+}
+
+.contenido1 p{
+    text-align: center;
+    color: beige;
+    background-color: #271f1f;
+    padding: 3.5px;
+    position: relative;
+    top: 55%;
+    
+}
+
+/*Videos del index*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.video{
+    width: 450;
+    height: 350;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.carousel-inner{
+    display: none;
+}
+
+/*Estilos del main de biografía*/
+
+.contenedor1{
+    display: flex;
+    justify-content: left;
+    align-items:center
+}
+.contenedor1 img{
+  width: 850px;
+  height: 350px;
+  margin-right: 20px;
+  box-shadow: 3px 3px 10px lightgray;  
+}
+     
+.contenedor1 p{
+    text-align: center;
+    margin: 40px;  
+    padding: 50px;
+    border-top-left-radius: 80px 80px;
+    border: rgb(51, 51, 51) 6px double;
+    background-color: rgba(255, 255, 255, 0.342);
+
+
+}
+
+.contenedor2{
+    display: flex;
+    justify-content: right;
+    align-items:center
+}
+.contenedor2 img{
+  width: 750px;
+  height: 420px;
+  margin-left: 20px;
+  box-shadow: 3px 3px 8px lightgray;  
+  
+}
+     
+.contenedor2 p{
+    text-align: center;
+    margin: 40px;
+    padding: 50px;
+    border-top-right-radius: 80px 80px;
+    border: rgb(51, 51, 51) 6px double;
+    background-color: rgba(255, 255, 255, 0.342);
+
+  }
+
+/*Estilos del main de miembros*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.boxcontenido{
+display: flex;
+justify-self: center;
+align-items: center;
+text-align: center;
+
+}
+.box{
+flex: 1;
+margin: 20px 20px;
+}
+
+.box img{
+ width: 100%;   
+ height: auto;
+ box-shadow: 3px 3px 8px lightgray;  
+ margin: 5px;
+}
+
+.box p{
+    margin: 2px;
+}
+
+.hitori{
+  color:rgb(196, 105, 163) ;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px #ceaebf;
+   }
+
+   .nijika{
+color:rgb(196, 173, 105) ;
+font-weight: bold;
+text-shadow: 1px 1px 2px #cebeae;
+   }
+
+   .ryo{
+    color:rgb(105, 140, 196) ;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #aeb3ce;
+   }
+
+   .ikuyo{
+    color:rgb(196, 105, 105) ;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #ceb2ae;
+   }
+
+/*Estilos del main de música*/
+
+   *{
+    box-sizing: border-box;
+}
+.gallery{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+}
+
+.item img{
+    width: 400px;
+    height: 400px;
+    margin: 10px;
+    box-shadow: 5px 5px 8px lightgray;
+    }
+
+
+/*Estilos del main de merch*/
+
+    .gallery2{
+     display: inline-block;
+    border: 1px solid hsl(0, 0%, 60%) ;
+    margin: 10px;
+    box-shadow: 4px 4px 10px lightgray;  
+    margin-left: 60px;
+    background-color: white;
+}
+
+        
+.gallery2 .desc{
+    padding: 10px;
+    text-align: center;
+}
+
+.gallery2 img{
+    width: 400px;
+    height: 400px;
+
+
+}
+
+ /*flecha top*/
+
+.flecha{
+width: 50px;
+height: 50px;
+position: fixed;
+bottom: 40px;
+right: 30px;
+display: flex;
+}
+
+ /*estilos footer*/
+
+.footer .redes{
+    text-align: center;
+    margin-top: 50px;
+
+}
+
+.texto{
+    text-align: center;
+    margin: 20px;
+}
+
+/*Desktop*/
+@media only screen and (max-width: 1280px) {
+    header{
+    padding: 0 50px;
+    }
+    
+}
+
+
+/*Tablet*/
+@media only screen and (max-width: 501px) and (max-width: 960px) {
+    header{
+        padding: 0 30px;
+        }
+}
+
+/*Mobile*/
+@media only screen and (max-width: 500px) {
+
+/*Títulos y subtítulos*/
+    h2{
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            font-size: 22px;
+            font-weight: bold;
+    }
+
+    p{
+    font-size: 16px;
+    }
+
+    /*Estilos del header*/
+    .hamburger{
+        display: block;
+        cursor: pointer;
+    }
+    .hamburger .line{
+    width: 30px;
+    height: 2.5px;
+    background: white;
+    margin: 6px 0;
+    border-radius: 2px;
+    }
+    nav{
+   height: 0;
+   position: absolute;
+   top: 80px;
+   left: 0;
+   right: 0;
+   width: 100vw;
+   background-color: black;
+   overflow: hidden;
+    }
+
+    header h2 {
+        margin: 2px;
+        }   
+    
+
+    /*Estilos del index*/
+    .contenido1{
+        display: grid;
+        align-items: center;
+        min-height: 60vh;
+        background-image: url(../images/Portdada\ mobile.png);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .contenido1 h1{
+        color: rgb(134, 66, 66);
+        text-align: center;
+        position: relative;
+        bottom: 30%;
+        font-size: 20px;
+    
+    }
+    
+    .contenido1 p{
+        text-align: center;
+      font-size: 80%;
+        color: beige;
+        background-color: #271f1f;
+        padding: 3.5px;
+        position: relative;
+        top: 50%;
+    }
+
+    /*Videos del index*/
+    .video{
+        display: none;
+    }
+    .carousel-inner{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+
+
+
+    }.carousel-control-next,
+    .carousel-control-prev{
+        filter: invert(100%);
+    }
+
+    /*Estilos de miembros*/
+   
+    .contenido3{
+        display: none;
+    }
+
+    .boxcontenido{
+        width: 80%;
+        position: relative;
+        left: 10%;
+    }
+
+    /*estilos footer*/
+
+.footer .redes{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+}
+}
