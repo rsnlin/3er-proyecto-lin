@@ -24,26 +24,38 @@
 </head>
 
 <body>
-    <header> <!-- Nav Bar -->
+   <header><!-- Nav Bar -->
         <a href="#" class="logo">
-            <img src="../proyecto/images/kblogo.png" alt="Logo">
-            <h2 class="nombre">Kessoku Band</h2>
-            </a>
-            <div class="hamburger">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-            </div>
-            <nav>
+        <img src="./images/kblogo.png" alt="Logo">
+        <h2 class="nombre">Kessoku Band</h2>
+        </a>
+        <input type="checkbox" id="nav_check" hidden>
+        <nav>
             <ul>
-            <li><a href="./index.html" class="current">Inicio</a></li>
-            <li><a href="./html/biografía.html">Biografía</a></li>
-            <li><a href="./html/miembros.html">Miembros</a></li>
-            <li><a href="./html/música.html">Música</a></li>
-            <li><a href="./html/merch.html">Merch</a></li>
+                <li>
+                    <a href="index.html" class="active">Inicio</a>
+                </li>
+                <li>
+                    <a href="./html/biografía.html">Biografía</a>
+                </li>
+                <li>
+                    <a href="./html/miembros.html">Miembros</a>
+                </li>
+                <li>
+                    <a href="./html/música.html">Música</a>
+                </li>
+                <li>
+                    <a href="./html/merch.html">Merch</a>
+                </li>
             </ul>
         </nav>
-    </header> 
+        <label for="nav_check" class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
+    </header>
+
 
     <main class="contenido1"><!-- Presentación -->
         <h1>¡Conoce a las carismáticas miembros de Kessoku Band!</h1>
