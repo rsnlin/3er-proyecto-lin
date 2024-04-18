@@ -1,0 +1,20 @@
+@mixin cuadro-texto{
+    text-align: center;
+    margin: 40px;
+    padding: 50px;
+    border-top-left-radius: 80px 80px;
+    border-top-right-radius: 80px 80px;
+    border: #372048 5px double;
+}
+
+.contenedor1 {
+    p {
+        @include cuadro-texto();
+    }
+}
+
+.contenedor2 {
+    p {
+        @include cuadro-texto();
+    }
+}

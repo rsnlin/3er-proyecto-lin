@@ -1,39 +1,27 @@
 @charset "UTF-8";
-/* body */
 body {
   font-family: "Barlow Condensed", sans-serif;
   margin: 0;
   font-size: 18px;
+  color: black;
   background-color: white;
   background-image: url(../images/fondo.png);
 }
 
 /*Títulos y subtítulos*/
 h1 {
-  background-image: linear-gradient(180deg, rgb(161, 91, 122) 5%, rgb(155, 62, 109) 37%, rgb(28, 15, 46) 76%);
-  background-clip: text;
-  color: transparent;
   margin: 18px;
   text-align: center;
   padding: 30px;
   font-weight: bold;
-  text-transform: uppercase;
-  font-size: 35px;
 }
 
 h2 {
-  background-image: linear-gradient(90deg, rgb(161, 91, 122) 9%, rgb(155, 62, 109) 41%, rgb(28, 15, 46) 84%);
-  background-clip: text;
-  color: transparent;
   text-align: center;
   margin-top: 60px;
   margin-bottom: 40px;
   font-size: 30px;
   font-weight: bold;
-}
-
-p {
-  color: black;
 }
 
 /*Estilos del header*/
@@ -65,49 +53,49 @@ header {
   justify-content: space-between;
   padding: 10px;
 }
+
 header h2 {
   font-size: 18px;
   margin: 10px;
   text-transform: uppercase;
-  color: white;
 }
+
 header img {
   height: 62px;
   margin: 15px;
 }
 
-nav ul {
+header nav ul {
   display: flex;
   font-weight: 500;
   padding-right: 10px;
 }
-nav a {
+
+header nav ul li a {
   display: inline-block;
-  color: white;
+  color: hsl(0, 0%, 100%);
   padding: 5px 0;
   margin: 0 10px;
   border: 3px solid transparent;
   text-transform: uppercase;
-  transition: 0.5s;
+  transition: 0.2s;
 }
-nav a:hover {
-  border-bottom-color: white;
-  margin: 0 20px;
-  transition: 1s;
-}
-nav .active {
-  border-bottom-color: white;
+
+header nav ul li a:hover,
+header nav ul li a.active {
+  border-bottom-color: rgb(255, 255, 255);
 }
 
 .hamburger {
   cursor: pointer;
   display: none;
 }
+
 .hamburger div {
   width: 30px;
   height: 2.5px;
   margin: 5px 0;
-  background: white;
+  background: #ffffff;
 }
 
 /*Estilos del main de index*/
@@ -119,24 +107,39 @@ nav .active {
   background-size: cover;
   background-position: center;
 }
+
 .contenido1 h1 {
-  background: linear-gradient(180deg, #a97068 4%, #a14c4b 42%, #843232 70%);
-  background-clip: text;
-  color: transparent;
+  color: rgb(134, 66, 66);
   text-align: center;
   position: relative;
   bottom: 35%;
-  font-size: 40px;
-  text-transform: none;
-  text-decoration: none;
 }
+
 .contenido1 p {
   text-align: center;
   color: beige;
-  background: radial-gradient(circle, #271f1f 16%, #382d2a 68%, #473b35 87%);
+  background-color: #271f1f;
   padding: 3.5px;
   position: relative;
   top: 55%;
+}
+
+/*Videos del index*/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.video {
+  width: 450;
+  height: 350;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.carousel-inner {
+  display: none;
 }
 
 /*Estilos del main de biografía*/
@@ -145,13 +148,21 @@ nav .active {
   justify-content: left;
   align-items: center;
 }
+
 .contenedor1 img {
   width: 850px;
   height: 350px;
   margin-right: 20px;
-  border-radius: 2px;
   box-shadow: 3px 3px 10px lightgray;
-  transition: 1s;
+}
+
+.contenedor1 p {
+  text-align: center;
+  margin: 40px;
+  padding: 50px;
+  border-top-left-radius: 80px 80px;
+  border: rgb(51, 51, 51) 6px double;
+  background-color: rgba(255, 255, 255, 0.342);
 }
 
 .contenedor2 {
@@ -159,12 +170,21 @@ nav .active {
   justify-content: right;
   align-items: center;
 }
+
 .contenedor2 img {
   width: 750px;
   height: 420px;
   margin-left: 20px;
-  border-radius: 2px;
   box-shadow: 3px 3px 8px lightgray;
+}
+
+.contenedor2 p {
+  text-align: center;
+  margin: 40px;
+  padding: 50px;
+  border-top-right-radius: 80px 80px;
+  border: rgb(51, 51, 51) 6px double;
+  background-color: rgba(255, 255, 255, 0.342);
 }
 
 /*Estilos del main de miembros*/
@@ -180,23 +200,20 @@ nav .active {
   align-items: center;
   text-align: center;
 }
-.boxcontenido .box {
+
+.box {
   flex: 1;
   margin: 20px 20px;
 }
-.boxcontenido .box img {
+
+.box img {
   width: 100%;
   height: auto;
-  border-radius: 2px;
   box-shadow: 3px 3px 8px lightgray;
   margin: 5px;
-  transition: 1s;
 }
-.boxcontenido .box img:hover {
-  width: 102%;
-  transition: 1s;
-}
-.boxcontenido .box p {
+
+.box p {
   margin: 2px;
 }
 
@@ -207,7 +224,7 @@ nav .active {
 }
 
 .nijika {
-  color: rgb(196, 169, 105);
+  color: rgb(196, 173, 105);
   font-weight: bold;
   text-shadow: 1px 1px 2px #cebeae;
 }
@@ -235,17 +252,12 @@ nav .active {
   align-items: center;
   flex-wrap: wrap;
 }
-.gallery img {
+
+.item img {
   width: 400px;
   height: 400px;
   margin: 10px;
   box-shadow: 5px 5px 8px lightgray;
-  transition: 1s;
-}
-.gallery img:hover {
-  width: 420px;
-  height: 420px;
-  transition: 1s;
 }
 
 /*Estilos del main de merch*/
@@ -253,47 +265,34 @@ nav .active {
   display: inline-block;
   border: 1px solid hsl(0, 0%, 60%);
   margin: 10px;
-  transition: 1s;
   box-shadow: 4px 4px 10px lightgray;
   margin-left: 60px;
   background-color: white;
 }
-.gallery2:hover {
-  transform: scale(1.1);
-  transition: 1s;
-}
+
 .gallery2 .desc {
   padding: 10px;
   text-align: center;
 }
+
 .gallery2 img {
   width: 400px;
   height: 400px;
 }
 
-/*Videos del index*/
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-}
-
-.video {
-  width: 450;
-  height: 350;
-  display: flex;
-  justify-content: space-evenly;
-}
-.video iframe {
-  box-shadow: 4px 4px 10px lightgray;
-}
-
-/*Estilos footer*/
-footer .redes {
+/*estilos footer*/
+.footer .redes {
   text-align: center;
   margin-top: 50px;
 }
-footer .flecha {
+
+.texto {
+  text-align: center;
+  margin: 20px;
+}
+
+/*flecha top*/
+.flecha {
   width: 50px;
   height: 50px;
   position: fixed;
@@ -301,38 +300,14 @@ footer .flecha {
   right: 30px;
   display: flex;
 }
-footer .texto {
-  text-align: center;
-  margin: 20px;
-}
-
-.contenedor1 p {
-  text-align: center;
-  margin: 40px;
-  padding: 50px;
-  border-top-left-radius: 80px 80px;
-  border-top-right-radius: 80px 80px;
-  border: #372048 5px double;
-}
-
-.contenedor2 p {
-  text-align: center;
-  margin: 40px;
-  padding: 50px;
-  border-top-left-radius: 80px 80px;
-  border-top-right-radius: 80px 80px;
-  border: #372048 5px double;
-}
 
 /*Desktop*/
-@media screen and (min-width: 1024px) {
+@media only screen and (max-width: 1280px) {
   header {
-    padding: 0 60px;
-  }
-  .carousel-inner {
-    display: none;
+    padding: 0 50px;
   }
 }
+
 /*Mobile*/
 @media only screen and (max-width: 700px) {
   /*Títulos y subtítulos*/
@@ -355,20 +330,20 @@ footer .texto {
     z-index: 1;
     width: 100%;
     left: -100%;
-    top: 100px;
+    top: 80px;
     width: 100%;
     background: #000000;
     padding: 30px;
     transition: 0.3s;
   }
+  header #nav_check:checked ~ nav {
+    left: 0;
+  }
   header nav ul {
     display: block;
   }
-  header nav a {
+  header nav ul li a {
     margin: 5px 0;
-  }
-  header #nav_check:checked ~ nav {
-    left: 0;
   }
   /*Estilos del index*/
   .contenido1 {
@@ -380,9 +355,7 @@ footer .texto {
     background-position: center;
   }
   .contenido1 h1 {
-    background: linear-gradient(180deg, #a97068 4%, #a14c4b 42%, #843232 70%);
-    background-clip: text;
-    color: transparent;
+    color: rgb(134, 66, 66);
     text-align: center;
     position: relative;
     bottom: 30%;
@@ -392,7 +365,7 @@ footer .texto {
     text-align: center;
     font-size: 80%;
     color: beige;
-    background: radial-gradient(circle, rgb(39, 31, 31) 50%, rgb(56, 45, 42) 80%, rgb(71, 59, 53) 94%);
+    background-color: #271f1f;
     padding: 3.5px;
     position: relative;
     top: 50%;
@@ -408,9 +381,6 @@ footer .texto {
     text-align: center;
     margin-top: 10px;
   }
-  .carousel-inner iframe {
-    box-shadow: 2px 2px 12px lightgray;
-  }
   .carousel-control-next,
   .carousel-control-prev {
     filter: invert(100%);
@@ -420,17 +390,14 @@ footer .texto {
     display: none;
   }
   .boxcontenido {
-    margin-top: 20px;
     width: 80%;
     position: relative;
     left: 10%;
   }
   /*estilos footer*/
-  footer .redes {
+  .footer .redes {
     text-align: center;
     margin-top: 20px;
     margin-bottom: 10px;
   }
 }
-
-/*# sourceMappingURL=style.css.map */

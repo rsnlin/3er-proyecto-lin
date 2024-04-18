@@ -1,0 +1,107 @@
+/*Mobile*/
+@media only screen and (max-width: 700px) {
+    
+    /*Títulos y subtítulos*/
+    h2 {
+      text-align: center;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      font-size: 22px;
+      font-weight: bold;
+    }
+    p {
+      font-size: 16px;
+    }
+    
+    /*Estilos del header*/
+    .hamburger {
+      display: block;
+    }
+    header nav {
+      position: absolute;
+      z-index: 1;
+      width: 100%;
+      left: -100%;
+      top: 100px;
+      width: 100%;
+      background: #000000;
+      padding: 30px;
+      transition: 0.3s;
+      ul {
+        display: block;
+      }
+      a {
+        margin: 5px 0;
+      }
+    }
+    header #nav_check:checked ~ nav {
+      left: 0;
+    }
+   
+    /*Estilos del index*/
+    .contenido1 {
+      display: grid;
+      align-items: center;
+      min-height: 60vh;
+      background-image: url(../images/Portdada\ mobile.png);
+      background-size: cover;
+      background-position: center;
+      h1 {
+        background: linear-gradient(180deg, #a97068 4%, #a14c4b 42%, #843232 70%);
+        background-clip: text;
+        color: transparent;  
+        text-align: center;
+        position: relative;
+        bottom: 30%;
+        font-size: 20px;
+      }
+      p {
+        text-align: center;
+        font-size: 80%;
+        color: beige;
+        background: radial-gradient(circle, rgba(39,31,31,1) 50%, rgba(56,45,42,1) 80%, rgba(71,59,53,1) 94%);
+        padding: 3.5px;
+        position: relative;
+        top: 50%;
+      }
+    }
+    
+    /*Videos del index*/
+    .video {
+      display: none;
+    }
+    .carousel-inner {
+      display: flex;
+      justify-self: center;
+      align-items: center;
+      text-align: center;
+      margin-top: 10px;
+      iframe{
+        box-shadow: 2px 2px 12px lightgray;
+      }
+    }
+    .carousel-control-next,
+    .carousel-control-prev {
+      filter: invert(100%);
+    }
+    /*Estilos de miembros*/
+    .contenido3 {
+      display: none;
+    }
+    
+    .boxcontenido {
+      margin-top: 20px;
+      width: 80%;
+      position: relative;
+      left: 10%;
+    }
+
+    /*estilos footer*/
+    footer{
+        .redes{
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 10px;
+        }
+    }
+  }

@@ -1,0 +1,16 @@
+/*Videos del index*/
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+  .video {
+    width: 450;
+    height: 350;
+    display: flex;
+    justify-content: space-evenly;
+  iframe{
+    box-shadow: 4px 4px 10px lightgray;
+  }
+  }

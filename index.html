@@ -5,28 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kessoku Band</title>
-    <link rel="icon" type="images/png" href="./images/kblogop.png">
+    <link rel="icon" type="images/png" href="images/kblogop.png">
     
     <!-- Bootstrap  -->
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     
     <!-- CSS  -->
 
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 
-    
-     <!-- Tipografía  -->
+    <!-- Animation  -->
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4"></script>
+
+    <!-- Tipografía  -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
-   <header><!-- Nav Bar -->
+    <header><!-- Nav Bar -->
         <a href="#" class="logo">
-        <img src="./images/kblogo.png" alt="Logo">
+        <img src="images/kblogo.png" alt="Logo">
         <h2 class="nombre">Kessoku Band</h2>
         </a>
         <input type="checkbox" id="nav_check" hidden>
@@ -36,16 +43,16 @@
                     <a href="index.html" class="active">Inicio</a>
                 </li>
                 <li>
-                    <a href="./html/biografía.html">Biografía</a>
+                    <a href="html/biografía.html">Biografía</a>
                 </li>
                 <li>
-                    <a href="./html/miembros.html">Miembros</a>
+                    <a href="html/miembros.html">Miembros</a>
                 </li>
                 <li>
-                    <a href="./html/música.html">Música</a>
+                    <a href="html/música.html">Música</a>
                 </li>
                 <li>
-                    <a href="./html/merch.html">Merch</a>
+                    <a href="html/merch.html">Merch</a>
                 </li>
             </ul>
         </nav>
@@ -56,63 +63,66 @@
         </label>
     </header>
 
-
+    <div class="headline">
     <main class="contenido1"><!-- Presentación -->
-        <h1>¡Conoce a las carismáticas miembros de Kessoku Band!</h1>
+        <h1 class="animate__animated animate__fadeInUp">¡Conoce a las carismáticas miembros de Kessoku Band!</h1>
 <p>*.☆\  Sumergete a un nuevo mundo musical y descubre a la estrella dentro de ti mediante la sinfonía de nuestras melodías.  /☆.*</p>
     </main> 
+    </div>
 
     <section>
-    <h2>Videos Musicales</h2>
-    <div class="video">     
-      <iframe src="https://www.youtube.com/embed/B7BxrAAXl94" title="【Lyric Video】結束バンド「ギターと孤独と蒼い惑星」／ TVアニメ「ぼっち・ざ・ろっく！」第5話劇中曲" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
-      <iframe src="https://www.youtube.com/embed/wSTbdqo-j74" title="【Lyric Video】結束バンド「星座になれたら」／ TVアニメ「ぼっち・ざ・ろっく！」第12話劇中曲" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>    
-      <iframe src="https://www.youtube.com/embed/gX9m-rCtSqc" title="【Lyric Video】結束バンド「忘れてやらない」／ TVアニメ「ぼっち・ざ・ろっく！」第12話劇中曲" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
-      <iframe src="https://www.youtube.com/embed/L2i0i9gWE00" title="【Lyric Video】結束バンド「あのバンド」／ TVアニメ「ぼっち・ざ・ろっく！」第8話劇中曲" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
-          </div>
-          
-          <div id="carouselExampleFade" class="carousel slide carousel-fade">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <iframe src="https://www.youtube.com/embed/B7BxrAAXl94" title="【Lyric Video】結束バンド「ギターと孤独と蒼い惑星」／ TVアニメ「ぼっち・ざ・ろっく！」第5話劇中曲" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-              </div>
-              <div class="carousel-item"> 
-                <iframe src="https://www.youtube.com/embed/wSTbdqo-j74" title="【Lyric Video】結束バンド「星座になれたら」／ TVアニメ「ぼっち・ざ・ろっく！」第12話劇中曲" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  
-              </div>  
-              <div class="carousel-item">
-                <iframe src="https://www.youtube.com/embed/gX9m-rCtSqc" title="【Lyric Video】結束バンド「忘れてやらない」／ TVアニメ「ぼっち・ざ・ろっく！」第12話劇中曲" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-              </div>
-              <div class="carousel-item">
-              <iframe src="https://www.youtube.com/embed/L2i0i9gWE00"   title="【Lyric Video】結束バンド「あのバンド」／ TVアニメ「ぼっち・ざ・ろっく！」第8話劇中曲" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
+    <h2 data-aos="fade-down">Videos Musicales</h2>
+    <div class="video" data-aos="fade-up">     
+    <iframe src="https://www.youtube.com/embed/B7BxrAAXl94" title="【Lyric Video】結束バンド「ギターと孤独と蒼い惑星」／ TVアニメ「ぼっち・ざ・ろっく！」第5話劇中曲" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+    <iframe src="https://www.youtube.com/embed/wSTbdqo-j74" title="【Lyric Video】結束バンド「星座になれたら」／ TVアニメ「ぼっち・ざ・ろっく！」第12話劇中曲" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>    
+    <iframe src="https://www.youtube.com/embed/gX9m-rCtSqc" title="【Lyric Video】結束バンド「忘れてやらない」／ TVアニメ「ぼっち・ざ・ろっく！」第12話劇中曲" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+    <iframe src="https://www.youtube.com/embed/L2i0i9gWE00" title="【Lyric Video】結束バンド「あのバンド」／ TVアニメ「ぼっち・ざ・ろっく！」第8話劇中曲" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+    </div>
 </section>
+
+<div id="carouselExampleFade" class="carousel slide carousel-fade">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <iframe src="https://www.youtube.com/embed/B7BxrAAXl94" title="【Lyric Video】結束バンド「ギターと孤独と蒼い惑星」／ TVアニメ「ぼっち・ざ・ろっく！」第5話劇中曲" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <div class="carousel-item"> 
+        <iframe src="https://www.youtube.com/embed/wSTbdqo-j74" title="【Lyric Video】結束バンド「星座になれたら」／ TVアニメ「ぼっち・ざ・ろっく！」第12話劇中曲" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  
+      </div>  
+      <div class="carousel-item">
+        <iframe src="https://www.youtube.com/embed/gX9m-rCtSqc" title="【Lyric Video】結束バンド「忘れてやらない」／ TVアニメ「ぼっち・ざ・ろっく！」第12話劇中曲" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <div class="carousel-item">
+      <iframe src="https://www.youtube.com/embed/L2i0i9gWE00"   title="【Lyric Video】結束バンド「あのバンド」／ TVアニメ「ぼっち・ざ・ろっく！」第8話劇中曲" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="d-block d-xl-none">
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  </div>
 
 <footer class="footer"> <!-- Redes -->
     <div class="redes">
         <a href="https://www.instagram.com/btr_isosta?igsh=N3V5dWtuYzB4anl4v" target="_blank">
-            <img src="./images/ig.png" alt="Logo de Instagram"></a>
+            <img src="images/ig.png" alt="Logo de Instagram"></a>
 
         <a href="https://www.tiktok.com/@btr_chiktok?_t=8kHIoLUu5C9&_r=1" target="_blank">
-            <img src="./images/tiktok.png" alt="Logo de TikTok"></a>
+            <img src="images/tiktok.png" alt="Logo de TikTok"></a>
 
         <a href="https://x.com/BTR_anime?t=NBRXM5VcgGR9hdi1wmoJVQ&s=09" target="_blank">
-            <img src="./images/twitter.png" alt="Logo de Twitter"></a>
+            <img src="images/twitter.png" alt="Logo de Twitter"></a>
 
     </div>
 
     <div class="flecha">
         <a href="#">
-            <img src="./images/flechaarriba.png" alt="Flecha hacia arriba"></a>
+            <img src="images/flechaarriba.png" alt="Flecha hacia arriba"></a>
     </div>
 
     <div class="texto">
@@ -122,7 +132,10 @@
 
 <!-- Bootstrap script  -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
+<script>
+    AOS.init();
+    ScrollReveal().reveal('.headline');
+</script>
 </body>
 
 </html>

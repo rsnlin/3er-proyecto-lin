@@ -1,0 +1,39 @@
+//Variables
+$p-color: black;
+
+body {
+    font-family: "Barlow Condensed", sans-serif;
+    margin: 0;
+    font-size: 18px;
+    background-color: white;
+    background-image: url(../images/fondo.png);
+  }
+
+  /*Títulos y subtítulos*/
+h1 {
+    background-image: linear-gradient(180deg, rgba(161,91,122,1) 5%, rgba(155,62,109,1) 37%, rgba(28,15,46,1) 76%);
+    background-clip: text;
+    color: transparent;  
+    margin: 18px;
+    text-align: center;
+    padding: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 35px;
+  }
+
+  
+  h2 {
+    background-image:linear-gradient(90deg, rgba(161,91,122,1) 9%, rgba(155,62,109,1) 41%, rgba(28,15,46,1) 84%);
+    background-clip: text;
+    color: transparent;  
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  p {
+  color: $p-color;
+  }

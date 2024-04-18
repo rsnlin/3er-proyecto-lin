@@ -1,0 +1,161 @@
+/*Estilos del main de index*/
+.contenido1 {
+    display: grid;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(../images/Portada.png);
+    background-size: cover;
+    background-position: center;
+    h1 {
+        background: linear-gradient(180deg, #a97068 4%, #a14c4b 42%, #843232 70%);
+        background-clip: text;
+        color: transparent;  
+        text-align: center;
+        position: relative;
+        bottom: 35%;
+        font-size: 40px;
+        text-transform: none;
+        text-decoration: none;
+      }
+      p {
+        text-align: center;
+        color: beige;
+        background: radial-gradient(circle, #271f1f 16%, #382d2a 68%, #473b35 87%);
+        padding: 3.5px;
+        position: relative;
+        top: 55%;
+      }
+  }
+  
+  /*Estilos del main de biografía*/
+.contenedor1 {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    img {
+        width: 850px;
+        height: 350px;
+        margin-right: 20px;
+        border-radius: 2px;
+        box-shadow: 3px 3px 10px lightgray;
+        transition: 1s;
+      }
+  }
+
+  .contenedor2 {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    img {
+        width: 750px;
+        height: 420px;
+        margin-left: 20px;
+        border-radius: 2px;
+        box-shadow: 3px 3px 8px lightgray;
+      }
+  }
+
+  /*Estilos del main de miembros*/
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+  .boxcontenido {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    text-align: center;
+    .box {
+        flex: 1;
+        margin: 20px 20px;
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 2px;
+            box-shadow: 3px 3px 8px lightgray;
+            margin: 5px;
+            transition: 1s;
+            &:hover{
+              width: 102%;
+              transition: 1s;
+            
+          }
+          }
+          p {
+            margin: 2px;
+          }
+      }
+  }
+  
+  .hitori {
+    color: rgb(196, 105, 163);
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #ceaebf;
+  }
+  
+  .nijika {
+    color: rgb(196, 169, 105);
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #cebeae;
+  }
+  
+  .ryo {
+    color: rgb(105, 140, 196);
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #aeb3ce;
+  }
+  
+  .ikuyo {
+    color: rgb(196, 105, 105);
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #ceb2ae;
+  }
+
+  /*Estilos del main de música*/
+* {
+    box-sizing: border-box;
+  }
+  
+  .gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    img {
+        width: 400px;
+        height: 400px;
+        margin: 10px;
+        box-shadow: 5px 5px 8px lightgray;
+            transition: 1s;
+            &:hover{
+              width: 420px;
+              height: 420px;
+              transition: 1s;      
+      }
+  }
+  }
+
+  /*Estilos del main de merch*/
+.gallery2 {
+    display: inline-block;
+    border: 1px solid hsl(0, 0%, 60%);
+    margin: 10px;
+    transition: 1s;
+    &:hover{
+      transform: scale(1.1);
+      transition: 1s;      
+    }
+    box-shadow: 4px 4px 10px lightgray;
+    margin-left: 60px;
+    background-color: white;
+    .desc {
+        padding: 10px;
+        text-align: center;
+      }
+      img {
+        width: 400px;
+        height: 400px;
+      }
+  }
